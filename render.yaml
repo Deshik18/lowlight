@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lowlight-enhancer
+    env: python
+    plan: free  # change to 'starter' or other plan if necessary
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app  # replace 'app' with your entry point
+    autoDeploy: true
+    branch: main
+    region: oregon
