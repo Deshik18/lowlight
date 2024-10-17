@@ -803,7 +803,7 @@ def process_image(INPUT_IMAGE_PATH, OUTPUT_IMAGE_DIR="results/"):
 
 
     cv2.imwrite(OUTPUT_IMAGE_PATH + "_backlit.jpg", O_rgb)
-    return OUTPUT_IMAGE_PATH + "_colored_output.jpg"
+    return OUTPUT_IMAGE_PATH + "_backlit.jpg"
     # #cv2.imwrite(OUTPUT_IMAGE_PATH + "_colored_output_fuzzy.jpg", O_rgb_fuzzy)
     # #cv2.imwrite(OUTPUT_IMAGE_PATH + "_colored_output_comp.jpg", np.hstack((O_rgb, O_rgb_fuzzy)))
 

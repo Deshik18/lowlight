@@ -57,4 +57,4 @@ def enhance():
     return send_file(img_io, mimetype='image/jpeg')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, host='0.0.0.0', port=8080)
